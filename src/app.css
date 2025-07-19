@@ -1,2 +1,41 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+:root {
+	--background: var(--color-white);
+	--background-primary: var(--color-sky-600);
+	--background-primary-active: var(--color-sky-700);
+	--background-muted: var(--color-gray-200);
+	--background-muted-active: var(--color-gray-300);
+	--foreground: var(--color-gray-800);
+	--foreground-primary: var(--color-sky-600);
+	--foreground-muted: var(--color-gray-500);
+	--border: var(--color-gray-200);
+	--border-primary: var(--color-sky-500);
+}
+
+@theme {
+	--color-background: var(--background);
+	--color-background-primary: var(--background-primary);
+	--color-background-primary-active: var(--background-primary-active);
+	--color-background-muted: var(--background-muted);
+	--color-background-muted-active: var(--background-muted-active);
+	--color-foreground: var(--foreground);
+	--color-foreground-primary: var(--foreground-primary);
+	--color-foreground-muted: var(--foreground-muted);
+	--color-border: var(--border);
+	--color-border-primary: var(--border-primary);
+
+	--font-sans: 'Manrope', 'sans-serif';
+}
+
+* {
+	font-optical-sizing: auto;
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--color-foreground);
+	letter-spacing: var(--tracking-wide);
+	font-weight: var(--font-weight-medium);
+}
