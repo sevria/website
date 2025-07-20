@@ -19,8 +19,8 @@
 	<div class="mx-auto flex h-16 w-full max-w-7xl items-center px-5">
 		<p class="text-foreground mr-auto">
 			<Link href="/" class="inline-flex items-center gap-0.5">
-				<img alt="Logo" src="/logo.svg" class="size-7" />
-				<span class="text-2xl font-semibold">Sevria</span>
+				<img alt="Logo" src="/logo.svg" class="size-8" />
+				<span class="text-[1.375rem] font-semibold">Sevria</span>
 			</Link>
 		</p>
 
