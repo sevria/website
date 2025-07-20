@@ -1,3 +1,46 @@
 # Getting started
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit
+This guide helps you set up Sevria locally in just a few steps.
+
+## Prerequisites
+
+Make sure you have Docker Desktop or Docker Engine installed.
+
+## 1. Define services
+
+Create a file called `compose.yml` and paste the following:
+
+```yaml
+services:
+  app:
+    container_name: sevria-app
+    image: ghcr.io/sevria/app:main
+    restart: unless-stopped
+    networks:
+      - sevria
+    ports:
+      - 127.0.0.1:3000:3000
+
+  api:
+    container_name: sevria-api
+    image: ghcr.io/sevria/api:main
+    restart: unless-stopped
+    networks:
+      - sevria
+    ports:
+      - 127.0.0.1:4000:4000
+
+networks:
+  sevria:
+```
+
+### 2. Start the containers
+
+Run the following command to start the containers:
+
+```shell
+docker compose up -d
+```
+
+Sevria app should be accessible at [http://localhost:3000](http://localhost:3000).
+Open it in the browser to see if the application running.
