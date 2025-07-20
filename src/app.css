@@ -7,7 +7,7 @@
 	--background-primary-active: var(--color-sky-700);
 	--background-muted: var(--color-gray-200);
 	--background-muted-active: var(--color-gray-300);
-	--foreground: var(--color-gray-800);
+	--foreground: var(--color-gray-900);
 	--foreground-primary: var(--color-sky-600);
 	--foreground-muted: var(--color-gray-500);
 	--border: var(--color-gray-200);
@@ -26,7 +26,7 @@
 	--color-border: var(--border);
 	--color-border-primary: var(--border-primary);
 
-	--font-sans: 'Manrope', 'sans-serif';
+	--font-sans: 'DM Sans', 'sans-serif';
 }
 
 * {
@@ -36,6 +36,4 @@
 body {
 	background-color: var(--color-background);
 	color: var(--color-foreground);
-	letter-spacing: var(--tracking-wide);
-	font-weight: var(--font-weight-medium);
 }

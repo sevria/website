@@ -13,7 +13,7 @@
 		children,
 		class: className,
 		href,
-		size = 'lg',
+		size = 'md',
 		variant = 'primary',
 		...rest
 	}: Props = $props();
@@ -21,9 +21,9 @@
 	let _class = twMerge(
 		classNames.focusable,
 		'flex items-center',
-		'font-bold cursor-pointer rounded-md transition-colors',
-		size === 'md' && 'h-10.5 px-4.5',
-		size === 'lg' && 'h-12 px-5.5',
+		'font-semibold cursor-pointer rounded-md transition-colors',
+		size === 'md' && 'h-11 px-4 text-base',
+		size === 'lg' && 'h-12 px-5 text-base',
 		variant === 'primary' && 'bg-background-primary hover:bg-background-primary-active text-white',
 		variant === 'secondary' && 'bg-background-muted hover:bg-background-muted-active',
 		className?.toString()
