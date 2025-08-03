@@ -18,8 +18,8 @@
 <div class="border-border border-b">
 	<div class="mx-auto flex h-16 w-full max-w-7xl items-center px-5">
 		<p class="text-foreground mr-auto">
-			<Link href="/" class="inline-flex items-center gap-0.5">
-				<img alt="Logo" src="/logo.svg" class="size-8" />
+			<Link href="/" class="inline-flex items-center gap-1">
+				<img alt="Logo" src="/logo.svg" class="size-6" />
 				<span class="text-[1.375rem] font-semibold">Sevria</span>
 			</Link>
 		</p>
